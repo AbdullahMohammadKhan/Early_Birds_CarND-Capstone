@@ -1,7 +1,7 @@
 Traffic Light Detection
 ===================
 
-
+ 
 This document covers the part related to the traffic light detection system which is what I (Sachit Vithaldas) contributed as part of this project.
 
 Core Idea
