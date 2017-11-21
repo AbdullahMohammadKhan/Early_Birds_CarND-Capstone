@@ -63,7 +63,7 @@ class WaypointUpdater(object):
 
         if not self.current_pose:
             return False
-        rospy.loginfo("working")
+
         ego_x = self.current_pose.position.x
         ego_y = self.current_pose.position.y
         ego_theta = math.atan2(self.current_pose.orientation.y, self.current_pose.orientation.x)
