@@ -123,13 +123,17 @@ docker run -p 4567:4567 -v $PWD:/capstone -v /tmp/log:/root/.ros/ --rm -it capst
 ```bash
 git clone https://github.com/udacity/CarND-Capstone.git
 ```
-2. [Download Models for Detection and Classification](https://drive.google.com/file/d/187w9FsQ9f0agynt_jJzUDP4_G5GRoZ1J/view?usp=sharing) 
-and copy it into the following directory
- **Early_Birds_CarND-Capstone/ros/src/tl_detector/light_classification/frozen_models**
+2. [Download Models for Detection and Classification]
+```bash
+cd Early_Birds_CarND-Capstone/ros/src/tl_detector/light_classification/frozen_models
+wget https://transfer.sh/13uqsH/shrunk_frozen_inference_graph_real.pb
+wget https://transfer.sh/G7mTQ/shrunk_frozen_inference_graph_sim.pb
+```
+ **Note: files must be put inside Early_Birds_CarND-Capstone/ros/src/tl_detector/light_classification/frozen_models**
 
 3. Install python dependencies
 ```bash
-cd CarND-Capstone
+cd Early_Birds_CarND-Capstone
 pip install -r requirements.txt
 ```
 4. Make and run styx
