@@ -75,14 +75,6 @@ Further documentation can be found at https://github.com/AndysDeepAbstractions/E
 ## Acknowledgments
 
 ---
-## Known Issues
-
-Since github has a 100MB file limit the model for traffic light detection has to be downloaded from:
-https://drive.google.com/open?id=19ehIoc0koBII2urasg3kHf9EOAiI2bbo
-and needs to be pasted in
-./Early_Birds_CarND-Capstone/ros/src/tl_detector/light_classification/frozen_models/
-
----
 ## Conclusions
 
 ---
