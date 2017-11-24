@@ -115,27 +115,20 @@ docker run -p 4567:4567 -v $PWD:/capstone -v /tmp/log:/root/.ros/ --rm -it capst
 ```bash
 git clone https://github.com/udacity/CarND-Capstone.git
 ```
-2. [Download Models for Detection and Classification]
-```bash
-cd Early_Birds_CarND-Capstone/ros/src/tl_detector/light_classification/frozen_models
-wget https://transfer.sh/13uqsH/shrunk_frozen_inference_graph_real.pb
-wget https://transfer.sh/G7mTQ/shrunk_frozen_inference_graph_sim.pb
-```
- **Note: files must be put inside Early_Birds_CarND-Capstone/ros/src/tl_detector/light_classification/frozen_models**
 
-3. Install python dependencies
+2. Install python dependencies
 ```bash
 cd Early_Birds_CarND-Capstone
 pip install -r requirements.txt
 ```
-4. Make and run styx
+3. Make and run styx
 ```bash
 cd ros
 catkin_make
 source devel/setup.sh
 roslaunch launch/styx.launch
 ```
-5. Run the simulator
+4. Run the simulator
 
 #### Real world testing
 1. Download [training bag](https://drive.google.com/file/d/0B2_h37bMVw3iYkdJTlRSUlJIamM/view?usp=sharing) that was recorded on the Udacity self-driving car (a bag demonstraing the correct predictions in autonomous mode can be found [here](https://drive.google.com/open?id=0B2_h37bMVw3iT0ZEdlF4N01QbHc))
