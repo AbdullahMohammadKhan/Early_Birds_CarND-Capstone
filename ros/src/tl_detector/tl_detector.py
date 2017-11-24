@@ -14,7 +14,7 @@ import numpy as np
 from scipy.spatial import distance
 import threading
 
-DEBUG = True              # get printout
+DEBUG = False              # get printout
 
 USE_SIMULATOR_STATE = False # For testing: use simulator provided topic /vehicle/traffic_lights
 STATE_COUNT_THRESHOLD = 3

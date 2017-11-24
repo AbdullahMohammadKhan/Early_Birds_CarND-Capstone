@@ -34,12 +34,12 @@ class WaypointUpdater(object):
     def __init__(self):
         rospy.init_node('waypoint_updater')
 
+        self.base_waypoints_viz_pub = rospy.Publisher('base_waypoints_viz', Path, queue_size=2)
         rospy.Subscriber('/current_pose', PoseStamped, self.pose_cb)
         self.base_wp_sub = rospy.Subscriber('/base_waypoints', Lane, self.waypoints_cb)
         rospy.Subscriber('/traffic_waypoint', Int32, self.traffic_cb)
         # rospy.Subscriber('/obstacle_waypoint', Int32, self.obstacle_cb)
         self.final_waypoints_pub = rospy.Publisher('final_waypoints', Lane, queue_size=1)
-        self.base_waypoints_viz_pub = rospy.Publisher('base_waypoints_viz', Path, queue_size=2)
         self.final_waypoints_viz_pub = rospy.Publisher('final_waypoints_viz', Path, queue_size=2)
         # State variables
         self.base_waypoints = [] 
